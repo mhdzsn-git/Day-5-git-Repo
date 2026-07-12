@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <h2>this a day-5-repo page </h2>
+
+    <p>This index.html file was successfully created using the vi editor.</p>
+ <form id="userForm">
+        <label>Name: <input type="text" id="name" required></label><br>
+        <label>Email: <input type="email" id="email" required></label><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="output"></div>
+        <script>
+        document.getElementById('userForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            document.getElementById('output').innerText = `Name: ${name}, Email: ${email}`;
+        });
+    </script>
+</body>
+</html>
+
+

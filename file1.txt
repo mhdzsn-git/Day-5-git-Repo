@@ -1,0 +1,3 @@
+Amend a Commit
+Make a commit, then add a missing file to it using git commit --amend.
+
